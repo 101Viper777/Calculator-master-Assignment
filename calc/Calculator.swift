@@ -29,10 +29,10 @@ class Calculator {
             exit(1)
         }
         var result = initialNumber // starting the operation
-//        print(result)
+//        print("hiiii",result)
 
         if args.count == 1{
-            return firstArg // pass the original version not the int version
+            return "\(initialNumber)" // pass the original version not the int version
             
         }
 //       print(args)
@@ -72,5 +72,6 @@ class Calculator {
         return "\(result)" // returning the string version
     }
 }
+
 
 
