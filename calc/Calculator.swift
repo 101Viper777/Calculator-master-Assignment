@@ -29,13 +29,11 @@ class Calculator {
             exit(1)
         }
         var result = initialNumber // starting the operation
-//        print("hiiii",result)
 
         if args.count == 1{
             return "\(initialNumber)" // pass the original version not the int version
             
         }
-//       print(args)
 
         // Iterate over the array, skipping the first number since we've already processed it
         for i in stride(from: 1, to: args.count, by: 2) {
@@ -46,7 +44,6 @@ class Calculator {
         //switch statement to handle the calculations (self explanatory
                 case "+":
                     result = add(no1: result, no2: nextNumber)
-//                    print(result)
                     
                 case "-":
                     result = subtract(no1: result, no2: nextNumber)
